@@ -1,0 +1,188 @@
+:root {
+    --m1: .6rem;
+    --m2: 1.2rem;
+    --m3: 2.4rem;
+    --content-width: 70rem;
+    --main: #f5587b;
+    --main-shade: #bd245f;
+    --accent: #f8b739;
+    --accent-shade: #ff8a5c;
+    --grey: #888;
+}
+
+html, body {
+    margin: 0;
+    font-size: 24px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 300;
+}
+
+h1 {
+    font-weight: 200;
+    color: #e41749;
+    font-size: 3rem;
+}
+h3 {
+  font-weight: 200;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+p {
+    font-weight: 300;
+    line-height: 1.4;
+    max-width: 40rem;
+    margin: 1.6rem 0;
+}
+
+a {
+    color: var(--main-shade);
+}
+
+.tag {
+  font-size: .8rem;
+  color: var(--grey);
+}
+
+header {
+    height: 4rem;
+    background: var(--main);
+    color: var(--accent);
+}
+
+header content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    height: 100%;
+    max-width: var(--content-width);
+}
+
+header h1 {
+    margin: 0;
+    padding: 0;
+    padding-left: var(--m2);
+    font-weight: 100;
+    font-size: 2rem;
+    color: var(--accent);
+}
+
+header ul {
+    display: flex;
+    margin: 0;
+    list-style: none;
+    display: none;
+    color: var(--main-shade);
+}
+
+header ul li {
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+    font-weight: 200;
+    font-size: 1.6rem;
+}
+
+header a {
+    color: inherit;
+}
+
+header .menu-icon {
+    outline: none;
+    padding: var(--m2);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    user-select: none;
+}
+
+header .menu-icon .navicon {
+    background: var(--main-shade);
+    display: block;
+    height: .25rem;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 2rem;
+}
+
+header .menu-icon .navicon:before,
+header .menu-icon .navicon:after {
+    background: var(--main-shade);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+header .menu-icon .navicon:before {
+    top: .6rem;
+}
+
+header .menu-icon .navicon:after {
+    top: -.6rem;
+}
+
+header .menu-btn {
+    display: none;
+}
+
+header .menu-btn:checked ~ ul {
+    display: block;
+    position: absolute;
+    top: 4rem;
+    width: 100%;
+    background: var(--main-shade);
+    color: var(--accent);
+}
+
+header .menu-btn:checked ~ ul li {
+    padding: 1rem 0;
+}
+
+header .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+}
+
+header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+}
+
+header .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+}
+
+header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+}
+
+main {
+    padding: var(--m2);
+    max-width: var(--content-width);
+    box-sizing: border-box;
+    margin: auto;
+}
+
+.blog-post time {
+    font-weight: 300;
+    color: var(--grey);
+}
+
+@media (min-width: 60rem) {
+    header .menu-icon {
+        display: none;
+    }
+
+    header ul {
+        display: flex;
+    }
+
+    header h1 {
+        font-size: 3rem;
+        letter-spacing: 1rem;
+    }
+}
