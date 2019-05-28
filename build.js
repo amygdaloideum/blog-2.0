@@ -4,7 +4,7 @@ const service = require('./lib/service.js');
 async function init() {
   console.log('Building static site...');
   try {
-    let build = require('./lib/build');
+    let build = require('./lib/make-site');
     const response = await service.getEntries();
     const posts = response.items;
     await build({ posts });

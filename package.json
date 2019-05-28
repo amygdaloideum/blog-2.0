@@ -1,5 +1,5 @@
 {
-  "name": "vanilla-static",
+  "name": "autofagist-blog",
   "version": "1.0.0",
   "description": "",
   "main": "build.js",
@@ -7,17 +7,19 @@
     "dev": "node dev",
     "build": "node build"
   },
-  "author": "",
+  "author": "Daniel Bornstrand",
   "license": "ISC",
   "dependencies": {
     "@contentful/rich-text-html-renderer": "^13.1.0",
-    "chokidar": "^3.0.0",
     "clean-css": "^4.2.1",
-    "clear-module": "^3.2.0",
     "contentful": "^7.6.0",
     "dotenv": "^8.0.0",
     "fs-extra": "^8.0.1",
     "html-minifier": "^4.0.0",
     "make-dir": "^3.0.0"
+  },
+  "devDependencies": {
+    "chokidar": "^3.0.0",
+    "clear-module": "^3.2.0"
   }
 }
