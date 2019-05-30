@@ -39,6 +39,10 @@ a {
     color: var(--main-shade);
 }
 
+code {
+    white-space: pre;
+}
+
 .tag {
   font-size: .8rem;
   color: var(--grey);

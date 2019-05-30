@@ -16,7 +16,9 @@
     "dotenv": "^8.0.0",
     "fs-extra": "^8.0.1",
     "html-minifier": "^4.0.0",
-    "make-dir": "^3.0.0"
+    "make-dir": "^3.0.0",
+    "marked": "^0.6.2",
+    "prismjs": "^1.16.0"
   },
   "devDependencies": {
     "chokidar": "^3.0.0",
