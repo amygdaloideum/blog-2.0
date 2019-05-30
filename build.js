@@ -15,6 +15,3 @@ async function init() {
 }
 
 init();
-
-const service = require('./lib/service.js');
-const  build = require('./lib/make-site');
