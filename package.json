@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "node scripts/dev",
     "build": "node scripts/build",
-    "start": "npm i && npm run build && cd public && npx serve -l 8080"
+    "serve": "node scripts/serve",
+    "start": "npm i && npm run build && npm run serve"
   },
   "author": "Daniel Bornstrand",
   "license": "ISC",
@@ -19,7 +20,8 @@
     "html-minifier": "^4.0.0",
     "make-dir": "^3.0.0",
     "marked": "^0.6.2",
-    "prismjs": "^1.16.0"
+    "prismjs": "^1.16.0",
+    "serve-handler": "^6.0.1"
   },
   "devDependencies": {
     "chokidar": "^3.0.0",
