@@ -1,7 +1,7 @@
 require('dotenv').config();
 const chokidar = require('chokidar');
 const clearModule = require('clear-module');
-const service = require('./lib/service.js');
+const service = require('../lib/service.js');
 
 async function init() {
   let build = require('./lib/make-site');
@@ -12,7 +12,7 @@ async function init() {
     .watch('.', { ignoreInitial: true, ignored: 'public' })
     .on('all', (event, path) => {
       clearModule.all();
-      let build = require('./lib/make-site');
+      let build = require('../lib/make-site');
       console.info('rebuilding...');
       build({ posts });
     });

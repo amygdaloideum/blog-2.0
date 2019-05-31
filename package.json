@@ -4,8 +4,9 @@
   "description": "",
   "main": "build.js",
   "scripts": {
-    "dev": "node dev",
-    "build": "node build"
+    "dev": "node scripts/dev",
+    "build": "node scripts/build",
+    "serve": "cd public && npx serve -l 8080"
   },
   "author": "Daniel Bornstrand",
   "license": "ISC",
