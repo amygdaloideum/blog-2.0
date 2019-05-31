@@ -4,7 +4,7 @@ const clearModule = require('clear-module');
 const service = require('../lib/service.js');
 
 async function init() {
-  let build = require('./lib/make-site');
+  let build = require('../lib/make-site');
   const response = await service.getEntries();
   const posts = response.items;
   build({ posts });
