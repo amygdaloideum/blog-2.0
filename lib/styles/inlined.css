@@ -22,6 +22,17 @@ h1 {
     color: #e41749;
     font-size: 3rem;
 }
+h2 {
+    font-weight: 300;
+    margin-top: 2.5rem;
+}
+
+/* h2::before {
+    content: '|';
+    font-weight: 200;
+    font-size: 1.8rem;
+    color: var(--main);
+} */
 h3 {
   font-weight: 200;
   font-size: 1.5rem;
