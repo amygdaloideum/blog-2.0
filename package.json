@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "node scripts/dev",
     "build": "node scripts/build",
-    "start": "npm i && npm build && cd public && npx serve -l 8080"
+    "start": "npm i && npm run build && cd public && npx serve -l 8080"
   },
   "author": "Daniel Bornstrand",
   "license": "ISC",
