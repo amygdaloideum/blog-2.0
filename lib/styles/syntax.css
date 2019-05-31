@@ -45,23 +45,27 @@ code[class*="language-"] ::selection {
 /* Code blocks */
 pre {
     background: rgba(40, 41, 54, 1) !important;
-    border-radius: 0.5em;
     padding: 1em;
     margin: 0.5em 0;
     overflow: auto;
     height: auto;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
 }
 
-:not(pre) > code[class*="language-"],
+:not(pre) > code,
 pre {
-    background: rgba(40, 41, 54, 1);
+
 }
 
 /* Inline code */
-:not(pre) > code[class*="language-"] {
-    padding: 4px 7px;
+:not(pre) > code {
     border-radius: 0.3em;
+    padding: 0 .3rem;
     white-space: normal;
+    color: #444;
+    background: #CCC;
+    border: 1px solid #AAA;
 }
 
 .token.comment {
@@ -219,4 +223,13 @@ pre {
 
 .language-objectivec .token.string {
     color: #50fa7b;
+}
+
+@media (min-width: 60rem) {
+    pre {
+        border-radius: 0.3em;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
 }
