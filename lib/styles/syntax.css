@@ -1,6 +1,7 @@
 code[class*="language-"],
 pre {
     color: #ccc;
+    font-size: .9rem;
     background: rgb(40, 41, 54);
     text-shadow: none;
     font-family: PT Mono, Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
