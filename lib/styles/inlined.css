@@ -18,8 +18,6 @@ html, body {
     word-break: break-word;
 }
 
-
-
 h1 {
     font-weight: 200;
     color: #e41749;
@@ -34,6 +32,17 @@ h3 {
   font-weight: 200;
   font-size: 1.5rem;
   text-transform: capitalize;
+}
+
+h1 a,h2 a {
+    opacity: 0;
+    margin-left: -1.5rem;
+    padding-right: .5rem;
+    transition: all .1s ease-in-out;
+}
+
+h1,h2:hover a {
+    opacity: 1;
 }
 
 p {
