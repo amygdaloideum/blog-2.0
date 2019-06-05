@@ -9,7 +9,7 @@ async function init() {
   const posts = response.items;
   build({ posts });
   const watcher = chokidar
-    .watch('.', { ignoreInitial: true, ignored: 'public' })
+    .watch('.', { ignoreInitial: true, ignored: ['public', '.git'] })
     .on('all', (event, path) => {
       clearModule.all();
       let build = require('../lib/make-site');
