@@ -54,11 +54,6 @@ pre {
     margin-right: calc(50% - 50vw);
 }
 
-:not(pre) > code,
-pre {
-
-}
-
 /* Inline code */
 :not(pre) > code {
     border-radius: 0.3em;
