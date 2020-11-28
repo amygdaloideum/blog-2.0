@@ -7,8 +7,7 @@
     "dev": "node scripts/dev",
     "build": "node scripts/build",
     "serve": "node scripts/serve",
-    "start": "npm i && npm run build && npm run serve",
-    "deploy-ec2": "scp -r -i \"ec2-key.pem\" public ubuntu@ec2-18-223-22-217.us-east-2.compute.amazonaws.com:~/autofagist-blog"
+    "start": "npm i && npm run build && npm run serve"
   },
   "author": "Daniel Bornstrand",
   "license": "ISC",
