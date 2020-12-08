@@ -199,8 +199,10 @@ header .menu-btn:checked ~ ul {
   position: absolute;
   top: 4rem;
   width: 100%;
-  background: var(--canvas-2);
+  background: var(--canvas-1);
   color: var(--purple);
+  border-top: 1px solid var(--separator-color);
+  border-bottom: 1px solid var(--separator-color);
 }
 
 header .menu-btn:checked ~ ul li {
