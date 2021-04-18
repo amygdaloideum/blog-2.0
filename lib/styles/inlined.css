@@ -227,6 +227,10 @@ footer content {
   font-size: 1.5rem;
 }
 
+.blog-post img {
+  max-width: 100%;
+}
+
 /* POST LIST */
 
 ul.post-list {
