@@ -61,9 +61,9 @@
     border-radius: 0.3em;
     padding: 0 0.3rem;
     white-space: normal;
-    border: 1px solid #bbb;
-    color: #333;
-    background: #eee;
+    border: 1px solid rgb(109, 109, 109);
+    color: #a9afb9;
+    background: #2a2c37;
   }
 
   .token.comment {
