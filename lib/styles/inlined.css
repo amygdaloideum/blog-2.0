@@ -128,6 +128,10 @@ code {
   white-space: pre;
 }
 
+.blog-post {
+  max-width: 40rem;
+}
+
 .blog-post ol {
   list-style: none;
   counter-reset: item;

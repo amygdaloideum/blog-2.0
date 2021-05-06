@@ -222,13 +222,6 @@
   .language-objectivec .token.string {
     color: #50fa7b;
   }
-  /* Content */
-
-  blockquote {
-    color: var(--grey);
-    border-left: 0.2rem solid var(--magenta);
-    padding-left: 1rem;
-  }
 }
 
 @media (prefers-color-scheme: light) {
@@ -460,13 +453,16 @@
   .token.variable {
     color: #e53935;
   }
+}
 
-  /* Content */
-  blockquote {
-    color: #576268;
-    border-left: 0.2rem solid var(--magenta);
-    padding-left: 1rem;
-  }
+/* Content */
+blockquote {
+  color: #576268;
+  border-left: 0.2rem solid var(--magenta);
+  padding-left: 0.5rem;
+  margin: 0rem;
+  font-size: 17px;
+  color: var(--magenta);
 }
 
 @media (min-width: 60rem) {
@@ -474,5 +470,8 @@
     border-radius: 0.3em;
     margin-left: 0;
     margin-right: 0;
+  }
+  blockquote {
+    padding-left: 1rem;
   }
 }
